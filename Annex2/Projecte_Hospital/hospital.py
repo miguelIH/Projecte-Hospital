@@ -113,9 +113,4 @@ def mostrar_menu():
             crearUsuari(usuari, contrasenya)
         else:
             numero=9
-            print("Sortint del programa...")
-
-    
-    
-    
-    
+            print("Sortint del programa...")   
