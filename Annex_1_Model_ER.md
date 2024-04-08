@@ -1,4 +1,4 @@
-<p>CLAU PRIMARIA</p>    <i>CLAU FORANA</i>
+<p>CLAU PRIMARIA</p>    <i>CLAU FORANA</i> <br>
 <br>
 ```
 PERSONAL MÈDIC: 
