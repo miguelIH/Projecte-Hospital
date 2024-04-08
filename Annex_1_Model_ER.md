@@ -1,7 +1,7 @@
 **CLAU PRIMARIA**  *CLAU FORANA*
 
 
-#PERSONAL MÈDIC: 
+#PERSONAL MÈDIC: <br>
 **ID Personal Mèdic**, Altres Dades Personals, Nom, Cognom,  Especialitat
 
 <br>
