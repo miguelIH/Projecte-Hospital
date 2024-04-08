@@ -2,7 +2,7 @@
 
 ```
 PERSONAL MÈDIC: 
-ID Personal Mèdic, Altres Dades Personals, Nom, Cognom,  Especialitat
+**ID Personal Mèdic**, Altres Dades Personals, Nom, Cognom,  Especialitat
 ````
 <br>
 PERSONAL INFERMERIA: 
