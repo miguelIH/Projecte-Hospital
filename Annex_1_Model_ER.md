@@ -40,6 +40,9 @@ HABITACIONS: <br>
 RESERVES HABITACIONS: <br>
 ---------------------
 **ID_Reserva_Habitacions**, *ID_Habitacio*, *ID_Pacient*, Data_Ingres, Data_Sortida
+
+<br>
+
 PLANTES: <br>
 --------
 **ID_Planta**, Num_Plantes
