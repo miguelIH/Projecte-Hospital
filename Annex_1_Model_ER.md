@@ -15,7 +15,7 @@ PERSONAL INFERMERIA: <br>
 
 VISITES: <br> 
 --------
-**ID_Visita**, *ID_Personal_Mèdic*, *Id_Pacient*, Diagnostic, Data_Hora_Visita, Medicaments
+**ID_Visita**, \_ID_Personal_Mèdic\_, *Id_Pacient*, Diagnostic, Data_Hora_Visita, Medicaments
 
 <br>
 
