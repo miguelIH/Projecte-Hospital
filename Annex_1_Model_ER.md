@@ -6,7 +6,9 @@ PERSONAL MÈDIC: <br>
 **ID Personal Mèdic**, Altres Dades Personals, Nom, Cognom,  Especialitat
 
 <br>
-PERSONAL INFERMERIA: 
+
+PERSONAL INFERMERIA: <br>
+--------------------
 ID_Personal_Infermeria, Nom, Cognom, Altres dades personals
 VISITES: 
 ID_Visita, ID_Personal_Mèdic, Id_Pacient, Diagnostic, Data_Hora_Visita, Medicaments
