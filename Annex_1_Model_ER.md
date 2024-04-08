@@ -9,11 +9,20 @@ PERSONAL MÈDIC: <br>
 
 PERSONAL INFERMERIA: <br>
 --------------------
-ID_Personal_Infermeria, Nom, Cognom, Altres dades personals
-VISITES: 
-ID_Visita, ID_Personal_Mèdic, Id_Pacient, Diagnostic, Data_Hora_Visita, Medicaments
-RESERVA_QUIROFAN:
-ID_Reserva_Quirofan, ID_Quirofan, ID_Personal Medic, Id_Pacient, Data_Operacio
+**ID_Personal_Infermeria**, Nom, Cognom, Altres dades personals
+
+<br>
+
+VISITES: <br> 
+--------
+**ID_Visita**, *ID_Personal_Mèdic*, *Id_Pacient*, Diagnostic, Data_Hora_Visita, Medicaments
+
+<br>
+
+RESERVA_QUIROFAN: <br>
+-----------------
+**ID_Reserva_Quirofan**, *ID_Quirofan*, *ID_Personal Medic*, *Id_Pacient*, Data_Operacio
+
 PACIENTS:
 ID_Pacient, nom, cognom, Altres Dades Personals
 HABITACIONS:
