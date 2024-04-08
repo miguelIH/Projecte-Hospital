@@ -65,4 +65,6 @@ APARELLS MÈDICS: <br>
 ----------------
 **Id_aparell_mèdic**, *id_quirofan*, tipus_aparell
 
+<br>
+
 ![Imatge_ModelER](Imatges/Model_Relacional.png)
