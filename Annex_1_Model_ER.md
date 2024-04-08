@@ -4,6 +4,7 @@
 PERSONAL MÈDIC: 
 ID Personal Mèdic, Altres Dades Personals, Nom, Cognom,  Especialitat
 ```
+<br>
 PERSONAL INFERMERIA: 
 ID_Personal_Infermeria, Nom, Cognom, Altres dades personals
 VISITES: 
