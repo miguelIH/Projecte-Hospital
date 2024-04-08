@@ -1,4 +1,5 @@
 <p>CLAU PRIMARIA</p>    <i>CLAU FORANA</i>
+<br>
 ```
 PERSONAL MÈDIC: 
 ID Personal Mèdic, Altres Dades Personals, Nom, Cognom,  Especialitat
