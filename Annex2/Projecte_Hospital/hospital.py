@@ -112,5 +112,5 @@ def mostrar_menu():
             contrasenya = input("Introdueix la teva nova contrasenya: ")
             crearUsuari(usuari, contrasenya)
         else:
-            numero=9
+            numero=0
             print("Sortint del programa...")   
