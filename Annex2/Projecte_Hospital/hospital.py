@@ -21,7 +21,7 @@ def conectar_postgresql(usuari:str,contrasenya:str):
     try:
         connection = psycopg2.connect(user=usuari,
                                       password=contrasenya,
-                                      host="192.168.56.107",
+                                      host="192.168.56.108",
                                       port="5432",
                                       dbname="postgres")
         return connection
@@ -94,8 +94,8 @@ def mostrar_menu():
     print("-" * 40)
     print("Menú Login")
     print("-" * 40)
-    numero = 0
-    while numero == 0:
+    numero = -1
+    while numero != 0:
         print("1.- Iniciar sessió")
         print("2.- Registrar usuari")
         print("0.- Sortir")
