@@ -73,7 +73,9 @@ APARELLS MÈDICS: <br>
 
 ![Imatge_ModelER](Imatges/Model_Relacional.png)
 
+<br>
 
+# Readme
 #### [Portda](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Portada%20Projecte%20Modular.md)
 #### [Annex_2_Connectivitat_i_login](https://github.com/miguelIH/Projecte-Intermodular/tree/main/Annex2/Projecte_Hospital)
 #### [Annex_3_Bloc_de_manteniment](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Annex_3_Bloc_de_manteniment.md)
