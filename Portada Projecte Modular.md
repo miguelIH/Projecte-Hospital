@@ -7,13 +7,13 @@
 
 ---
 
+
 ---
 **👨‍💻 Autors:** Alex Pica, Miguel Ibañez, Daniel Ruiz, Pau Miro
 
 **📚 Asignatura:** M02-UF3
 
 **🏫 Classe:** 1 ASIX
-
 ---
 #### [Annex_1_Model_ER](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Annex_1_Model_ER.md)
 #### [Annex_2_Connectivitat_i_login](https://github.com/miguelIH/Projecte-Intermodular/tree/main/Annex2/Projecte_Hospital)
