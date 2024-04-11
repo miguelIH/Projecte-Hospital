@@ -1,14 +1,16 @@
-# PRojecte Modular
+# <p align="center">Projecte Modular</p>
 
 ---
 
-**Fecha:** [Fecha actual]
+<p align="center"><img src="https://via.placeholder.com/150" alt="Logo"></p>
 
-**Autor:** [Tu nombre]
+---
 
-**Asignatura:** [Nombre de la asignatura]
 
-**Profesor:** [Nombre del profesor]
 
-**Institución:** [Nombre de la institución]
+**Autors:** [Alex Piqueta, Migueles Ibanez, Danielson Ruiz, Pau Miró]
+
+**Asignatura:** [M02-UF3]
+
+**Classe:** [1 ASIX]
 
