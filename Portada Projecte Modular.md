@@ -8,7 +8,7 @@
 ---
 
 ---
-**👨‍💻 Autors:** Alex Piqueta, Miguel Ibañez, Daniel Ruiz, Pau Miro
+**👨‍💻 Autors:** Alex Pica, Miguel Ibañez, Daniel Ruiz, Pau Miro
 
 **📚 Asignatura:** M02-UF3
 
