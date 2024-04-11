@@ -8,10 +8,11 @@
 ---
 
 ---
+**👨‍💻 Autors:** Alex Piqueta, Migueles Ibanez, Danielson Ruiz, Pau Miró
 
-**Autors:** Alex Piqueta, Migueles Ibanez, Danielson Ruiz, Pau Miró
+**📚 Asignatura:** M02-UF3
 
-**Asignatura:** M02-UF3
+**🏫 Classe:** 1 ASIX
 
-**Classe:** 1 ASIX
-
+---
+[Texto del enlace](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Annex_1_Model_ER.md)
