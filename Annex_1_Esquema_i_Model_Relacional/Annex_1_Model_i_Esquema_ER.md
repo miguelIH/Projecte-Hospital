@@ -11,6 +11,9 @@
 <br>
 
 # <p align="center"> ANNEX 1 - CREACIO DE TAULES </p>
+
+#TAULA PERSONAL#
+----------------
 ```
 CREATE TABLE PERSONAL (
     id_personal SERIAL PRIMARY KEY,
