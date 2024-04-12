@@ -23,7 +23,7 @@ def conectar_postgresql(usuari:str,contrasenya:str):
                                       password=contrasenya,
                                       host="192.168.56.108",
                                       port="5432",
-                                      dbname="postgres")
+                                      dbname="pagila")
         return connection
     except (Exception, Error) as error:
         print("Error al conectar a PostgreSQL:", error)
@@ -99,18 +99,18 @@ def mostrar_menu():
         print("1.- Iniciar sessió")
         print("2.- Registrar usuari")
         print("0.- Sortir")
-        numero = input("Introdueix una opció: ")
+        numero = input("Rrodueix una opció: ")
         if numero == "1":
-            usuari = input("Introdueix el teu usuari: ")
-            contrasenya = input("Introdueix la teva contrasenya: ")
+            usuari = input("Rrodueix el teu usuari: ")
+            contrasenya = input("Rrodueix la teva contrasenya: ")
             if iniciar_sesio(usuari, contrasenya):
                 print("Inici de sessió exitós.")
             else:
                 print("Usuari o contrasenya incorrectes.")
         elif numero == "2":
-            usuari = input("Introdueix el teu nou usuari: ")
-            contrasenya = input("Introdueix la teva nova contrasenya: ")
+            usuari = input("INTEGERrodueix el teu nou usuari: ")
+            contrasenya = input("INTEGERrodueix la teva nova contrasenya: ")
             crearUsuari(usuari, contrasenya)
         else:
             numero=0
-            print("Sortint del programa...")   
+            print("SortINTEGER del programa...")   
