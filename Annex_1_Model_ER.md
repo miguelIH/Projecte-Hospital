@@ -2,69 +2,6 @@
 
 
 
-**CLAU PRIMARIA**  *CLAU FORANA*
-
-PACIENTS: <br>
----------
-**ID_Pacient**, nom, cognom
-
-PERSONAL MÈDIC: <br>
----------------
-**ID Personal Mèdic**, Nom, Cognom, Especialitat
-
-<br>
-
-PERSONAL INFERMERIA: <br>
---------------------
-**ID_Personal_Infermeria**, Nom, Cognom,
-
-<br>
-
-VISITES: <br> 
---------
-**ID_Visita**, *ID_Personal_Mèdic*, *Id_Pacient*, Diagnostic, Data_Hora_Visita
-
-<br>
-
-RESERVA_QUIROFAN: <br>
------------------
-**ID_Reserva_Quirofan**, *ID_Quirofan*, *ID_Personal Medic*, *Id_Pacient*, Data_Operacio
-
-<br>
-
-HABITACIONS: <br>
-------------
-**ID_Habitacio**, *id_planta*, *num_habitacio*
-
-<br>
-
-RESERVES HABITACIONS: <br>
----------------------
-**ID_Reserva_Habitacions**, *ID_Habitacio*, *ID_Pacient*, Data_Ingres, Data_Sortida
-
-<br>
-
-PLANTES: <br>
---------
-**ID_Planta**, Num_Plantes
-
-<br>
-
-DIFERENT PERSONAL: <br>
-------------------
-**ID_Personal_vari**, nom, cognom, tipus_feina
-
-<br>
-
-QUIROFANS: <br>
-----------
-**ID_quiròfan**, *id_planta*, num_quirofan
-
-<br>
-
-APARELLS MÈDICS: <br>
-----------------
-**Id_aparell_mèdic**, *id_quirofan*, tipus_aparell
 
 <br>
 
