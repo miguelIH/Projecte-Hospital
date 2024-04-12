@@ -12,7 +12,7 @@
 
 # <p align="center"> ANNEX 1 - CREACIO DE TAULES </p>
 
-#TAULA PERSONAL#
+TAULA PERSONAL#
 ----------------
 ```
 CREATE TABLE PERSONAL (
