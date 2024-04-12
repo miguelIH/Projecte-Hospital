@@ -12,8 +12,8 @@
 
 # <p align="center"> ANNEX 1 - CREACIO DE TAULES </p>
 
-TAULA PERSONAL#
-----------------
+TAULA PERSONAL
+--------------
 ```
 CREATE TABLE PERSONAL (
     id_personal SERIAL PRIMARY KEY,
@@ -21,6 +21,8 @@ CREATE TABLE PERSONAL (
     cognom VARCHAR(255) NOT NULL
 );
 ```
+TAULA PLANTA
+------------
 ```
 CREATE TABLE PLANTA(
     id_planta SERIAL PRIMARY KEY, 
@@ -28,6 +30,8 @@ CREATE TABLE PLANTA(
 );
 
 ```
+TAULA PACIENT
+-------------
 ```
 CREATE TABLE PACIENT(
     id_pacient SERIAL PRIMARY KEY, 
@@ -35,6 +39,8 @@ CREATE TABLE PACIENT(
     cognom VARCHAR(255) NOT NULL
 );
 ```
+TAULA PERSONAL_MEDIC
+--------------------
 ```
 CREATE TABLE PERSONAL_MEDIC(
     id_personal_medic SERIAL PRIMARY KEY,    
@@ -43,6 +49,8 @@ CREATE TABLE PERSONAL_MEDIC(
     CONSTRAINT personals_medic_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
 );
 ```
+TAULA PERSONAL_INFERMERIA
+-------------------------
 ```
 CREATE TABLE PERSONAL_INFERMERIA(
     id_personal_infermeria SERIAL PRIMARY KEY, 
@@ -50,6 +58,8 @@ CREATE TABLE PERSONAL_INFERMERIA(
     CONSTRAINT personals_infermeria_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
 );
 ```
+TAULA VISITA
+------------
 ```
 CREATE TABLE VISITA(
     id_visita SERIAL PRIMARY KEY,
@@ -61,6 +71,8 @@ CREATE TABLE VISITA(
     CONSTRAINT pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT(id_pacient) 
 );
 ```
+TAULA QUIROFAN
+--------------
 ```
 CREATE TABLE QUIROFAN(
     id_quirofan SERIAL PRIMARY KEY, 
@@ -69,6 +81,8 @@ CREATE TABLE QUIROFAN(
     CONSTRAINT quirofans_planta_fk FOREIGN KEY (id_planta) REFERENCES PLANTA(id_planta)
 );
 ```
+TAULA RESERVA_QUIROFAN
+----------------------
 ```
 CREATE TABLE RESERVA_QUIROFAN(
     id_reserva_quirofan SERIAL PRIMARY KEY, 
@@ -81,6 +95,8 @@ CREATE TABLE RESERVA_QUIROFAN(
     CONSTRAINT quirofan_pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT(id_pacient) 
 );
 ```
+TAULA HABITACIO
+---------------
 ```
 CREATE TABLE HABITACIO(
     id_habitacio SERIAL PRIMARY KEY, 
@@ -89,6 +105,8 @@ CREATE TABLE HABITACIO(
     FOREIGN KEY (id_planta) REFERENCES PLANTES(id_planta)
 );
 ```
+TAULA RESERVA_HABITACIO
+-----------------------
 ```
 CREATE TABLE RESERVA_HABITACIONS(
     id_reserva_habitacio SERIAL PRIMARY KEY, 
@@ -100,6 +118,8 @@ CREATE TABLE RESERVA_HABITACIONS(
     CONSTRAINT pacient_habitacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT(id_pacient) 
 );
 ```
+TAULA PERSONAL_VARI
+-------------------
 ```
 CREATE TABLE PERSONAL_VARI(
     id_personal_vari SERIAL PRIMARY KEY, 
@@ -108,6 +128,8 @@ CREATE TABLE PERSONAL_VARI(
     CONSTRAINT personals_vari_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
 );
 ```
+TAULA APARELL_MEDIC
+-------------------
 ```
 CREATE TABLE APARELL_MEDIC(
     id_aparell_medic SERIAL PRIMARY KEY,  
@@ -116,12 +138,16 @@ CREATE TABLE APARELL_MEDIC(
     CONSTRAINT aparell_medic_fk FOREIGN KEY (id_quirofan) REFERENCES QUIROFAN(id_quirofan)
 );
 ```
+TAULA MEDICAMENT
+----------------
 ```
 CREATE TABLE MEDICAMENT (
     id_medicament SERIAL PRIMARY KEY, 
     nom VARCHAR(255) NOT NULL,
 );
 ```
+TAULA VISITA_MEDICAMENT
+-----------------------
 ```
 CREATE TABLE VISITA_MEDICAMENT (
     id_visita INT,
@@ -130,6 +156,8 @@ CREATE TABLE VISITA_MEDICAMENT (
     CONSTRAINT id_medicament_fk FOREIGN KEY (id_medicament) REFERENCES MEDICAMENT(id_medicament)
 );
 ```
+TAULA OPERACIO
+--------------
 ```
 CREATE TABLE OPERACIO (
     id_operacio 
