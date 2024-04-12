@@ -4,34 +4,31 @@
 
 **CLAU PRIMARIA**  *CLAU FORANA*
 
+PACIENTS: <br>
+---------
+**ID_Pacient**, nom, cognom
 
 PERSONAL MÈDIC: <br>
 ---------------
-**ID Personal Mèdic**, Altres Dades Personals, Nom, Cognom,  Especialitat
+**ID Personal Mèdic**, Nom, Cognom, Especialitat
 
 <br>
 
 PERSONAL INFERMERIA: <br>
 --------------------
-**ID_Personal_Infermeria**, Nom, Cognom, Altres dades personals
+**ID_Personal_Infermeria**, Nom, Cognom,
 
 <br>
 
 VISITES: <br> 
 --------
-**ID_Visita**, *ID_Personal_Mèdic*, *Id_Pacient*, Diagnostic, Data_Hora_Visita, Medicaments
+**ID_Visita**, *ID_Personal_Mèdic*, *Id_Pacient*, Diagnostic, Data_Hora_Visita
 
 <br>
 
 RESERVA_QUIROFAN: <br>
 -----------------
 **ID_Reserva_Quirofan**, *ID_Quirofan*, *ID_Personal Medic*, *Id_Pacient*, Data_Operacio
-
-<br>
-
-PACIENTS: <br>
----------
-**ID_Pacient**, nom, cognom, Altres Dades Personals
 
 <br>
 
@@ -55,7 +52,7 @@ PLANTES: <br>
 
 DIFERENT PERSONAL: <br>
 ------------------
-**ID_Personal_vari**, nom, cognom, tipus_feina, altres_dades_personals
+**ID_Personal_vari**, nom, cognom, tipus_feina
 
 <br>
 
