@@ -1,11 +1,16 @@
 # <p align="center"> ANNEX 1 - MODEL ER </p>
 
-
-
-
 <br>
 
 ![Imatge_ModelER](Imatges/Model_Relacional.png)
+
+<br>
+
+# <p align="center"> ANNEX 1 - ESQUEMA RELACIONAL </p>
+
+<br>
+
+# <p align="center"> ANNEX 1 - CREACIO DE TAULES </p>
 
 <br>
 
