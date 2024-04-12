@@ -11,6 +11,120 @@
 <br>
 
 # <p align="center"> ANNEX 1 - CREACIO DE TAULES </p>
+```
+CREATE TABLE PERSONAL (
+    id_personal SERIAL PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL, 
+    cognom VARCHAR(255) NOT NULL
+);
+```
+```
+CREATE TABLE PLANTA(
+    id_planta SERIAL PRIMARY KEY, 
+    num_plantes INTEGER NOT NULL
+);
+
+```
+```
+CREATE TABLE PACIENT(
+    id_pacient SERIAL PRIMARY KEY, 
+    nom VARCHAR(255) NOT NULL, 
+    cognom VARCHAR(255) NOT NULL
+);
+```
+```
+CREATE TABLE PERSONAL_MEDIC(
+    id_personal_medic SERIAL PRIMARY KEY,    
+    especialitat VARCHAR(255) NOT NULL,
+    id_personal INT,
+    CONSTRAINT personals_medic_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
+);
+```
+```
+CREATE TABLE PERSONAL_INFERMERIA(
+    id_personal_infermeria SERIAL PRIMARY KEY, 
+    id_personal INT,
+    CONSTRAINT personals_infermeria_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
+);
+```
+```
+CREATE TABLE VISITA(
+    id_visita SERIAL PRIMARY KEY,
+    diagnostic VARCHAR(255) NOT NULL, 
+    data_hora_visita TIMESTAMP NOT NULL, -
+    id_personal_medic INT,
+    id_pacient INT,
+    CONSTRAINT personal_fk FOREIGN KEY (id_personal_medic) REFERENCES PERSONAL_MEDIC(id_personal_medic), 
+    CONSTRAINT pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT(id_pacient) 
+);
+```
+```
+CREATE TABLE QUIROFAN(
+    id_quirofan SERIAL PRIMARY KEY, 
+    num_quirofan INTEGER NOT NULL,
+    id_planta INT,
+    CONSTRAINT quirofans_planta_fk FOREIGN KEY (id_planta) REFERENCES PLANTA(id_planta)
+);
+
+CREATE TABLE RESERVA_QUIROFAN(
+    id_reserva_quirofan SERIAL PRIMARY KEY, 
+    data_operacio DATE NOT NULL,
+    id_quirofan INT,
+    id_personal_medic INT ,
+    id_pacient INT,
+    CONSTRAINT quirofan_reserva_fk FOREIGN KEY (id_quirofan) REFERENCES QUIROFAN(id_quirofan), 
+    CONSTRAINT quirofan_personal_fk FOREIGN KEY (id_personal_medic) REFERENCES PERSONAL_MEDIC(id_personal_medic), 
+    CONSTRAINT quirofan_pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT(id_pacient) 
+);
+
+CREATE TABLE HABITACIO(
+    id_habitacio SERIAL PRIMARY KEY, 
+    num_habitacio INTEGER NOT NULL,
+    id_planta INT, 
+    FOREIGN KEY (id_planta) REFERENCES PLANTES(id_planta)
+);
+
+CREATE TABLE RESERVA_HABITACIONS(
+    id_reserva_habitacio SERIAL PRIMARY KEY, 
+    data_ingres DATE NOT NULL, 
+    data_sortida DATE NOT NULL,
+    id_habitacio INT,
+    id_pacient INT ,
+    CONSTRAINT habitacio_fk FOREIGN KEY (id_habitacio) REFERENCES HABITACIO(id_habitacio), 
+    CONSTRAINT pacient_habitacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT(id_pacient) 
+);
+
+CREATE TABLE PERSONAL_VARI(
+    id_personal_vari SERIAL PRIMARY KEY, 
+    tipus_feina VARCHAR(255) NOT NULL,
+    id_personal INT,
+    CONSTRAINT personals_vari_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
+
+);
+
+CREATE TABLE APARELL_MEDIC(
+    id_aparell_medic SERIAL PRIMARY KEY,  
+    tipus_aparell VARCHAR(255) NOT NULL,
+    id_quirofan INT,
+    CONSTRAINT aparell_medic_fk FOREIGN KEY (id_quirofan) REFERENCES QUIROFAN(id_quirofan)
+);
+
+CREATE TABLE MEDICAMENT (
+    id_medicament SERIAL PRIMARY KEY, 
+    nom VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE VISITA_MEDICAMENT (
+    id_visita INT,
+    id_medicament INT, 
+    CONSTRAINT id_visita_fk  FOREIGN KEY (id_visita) REFERENCES VISTA(id_visita),
+    CONSTRAINT id_medicament_fk FOREIGN KEY (id_medicament) REFERENCES MEDICAMENT(id_medicament)
+    
+);
+CREATE TABLE OPERACIO (
+    id_operacio 
+    
+);
 
 <br>
 
