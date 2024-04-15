@@ -8,7 +8,7 @@
 
 # <p align="center"> ANNEX 1 - ESQUEMA RELACIONAL </p>
 
-![Imatge_Esquema](Imatges/Esquema.png = 800x600)
+![Imatge_Esquema](Imatges/Esquema.png=800x600)
 
 <br>
 
