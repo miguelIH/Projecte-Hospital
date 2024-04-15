@@ -8,7 +8,8 @@
 
 # <p align="center"> ANNEX 1 - ESQUEMA RELACIONAL </p>
 
-![Imatge_Esquema](Imatges/Esquema.png)
+
+<img src="Imatges/Esquema.png">
 
 <br>
 
