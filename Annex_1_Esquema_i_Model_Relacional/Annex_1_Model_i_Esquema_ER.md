@@ -8,6 +8,8 @@
 
 # <p align="center"> ANNEX 1 - ESQUEMA RELACIONAL </p>
 
+![Imatge_Esquema](Imatges/Esquema.png)
+
 <br>
 
 # <p align="center"> ANNEX 1 - CREACIO DE TAULES </p>
