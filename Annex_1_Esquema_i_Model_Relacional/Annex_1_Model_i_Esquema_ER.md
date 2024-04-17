@@ -173,7 +173,7 @@ TAULA VISITA_MEDICAMENT
 CREATE TABLE VISITA_MEDICAMENT (
     id_visita INT,
     id_medicament INT, 
-    CONSTRAINT id_visita_fk  FOREIGN KEY (id_visita) REFERENCES VISTA(id_visita),
+    CONSTRAINT id_visita_fk  FOREIGN KEY (id_visita) REFERENCES VISITA(id_visita),
     CONSTRAINT id_medicament_fk FOREIGN KEY (id_medicament) REFERENCES MEDICAMENT(id_medicament)
 );
 ```
