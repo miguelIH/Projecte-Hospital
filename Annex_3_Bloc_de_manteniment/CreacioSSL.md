@@ -10,3 +10,10 @@ Seguidament, vaig crear la clau amb el certificat (csr), en el meu cas utilitzo 
 sudo openssl req -new -newkey rsa:2048 -nodes -keyout /etc/encryption/server.key -out /etc/encryption/server.csr
 ```
 ![imatge2](Imatges/SSL2.jpg)<br>
+<br>
+Quan ya hem completat de posar la informacio, fem un cat per veure si he creat el certificat.
+```
+cat /etc/encryption/server.csr
+```
+![imatge3](Imatges/SSL3.jpg)<br>
+<br>
