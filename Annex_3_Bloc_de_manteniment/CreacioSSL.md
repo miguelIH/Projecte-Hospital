@@ -17,3 +17,17 @@ cat /etc/encryption/server.csr
 ```
 ![imatge3](Imatges/SSL3.jpg)<br>
 <br>
+Ara fem una copia de la clau, en cas de perdre informacio fem un backup de tot el directory:
+```
+sudo cp /etc/encryption/server.csr /etc/encryption/server.csr.backup
+```
+Una feta la copia passem la clau a la ruta de la nostra base de dades postgres per vincular-ho, per fer això haurem de tenir instal·lat el postgres en el servidor. En cas de tenir postgres instal·lat hem d'anar a aquesta ruta per tal de vincular-ho.
+```
+cd /etc/postgresql
+```
+En el meu cas dins tinc uns fitxers a més dels defaults, pero dins d'aquesta ruta hem de trobar un arxiu que es el main.
+```
+sudo cp /etc/encryption/server.csr /etc/postgresql/15/main
+```
+![imatge4](Imatges/SSL4.jpg)<br>
+<br>
