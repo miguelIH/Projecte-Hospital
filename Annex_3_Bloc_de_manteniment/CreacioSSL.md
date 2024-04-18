@@ -31,3 +31,9 @@ sudo cp /etc/encryption/server.csr /etc/postgresql/15/main
 ```
 ![imatge4](Imatges/SSL4.jpg)<br>
 <br>
+Per últim comprovem que esta tot bé, haurem d'anar al postgres i posar le següent comanda.
+```
+SELECT * FROM pg_catalog.pg_stat_ssl
+```
+![imatge5](Imatges/SSL5.jpg)<br>
+<br>
