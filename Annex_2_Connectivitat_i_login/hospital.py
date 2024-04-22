@@ -21,7 +21,7 @@ def conectar_postgresql(usuari:str,contrasenya:str):
     try:
         connection = psycopg2.connect(user=usuari,
                                       password=contrasenya,
-                                      host="192.168.56.108",
+                                      host="192.168.1.55",
                                       port="5432",
                                       dbname="pagila")
         return connection
@@ -108,9 +108,9 @@ def mostrar_menu():
             else:
                 print("Usuari o contrasenya incorrectes.")
         elif numero == "2":
-            usuari = input("INTEGERrodueix el teu nou usuari: ")
-            contrasenya = input("INTEGERrodueix la teva nova contrasenya: ")
+            usuari = input("Rrodueix el teu nou usuari: ")
+            contrasenya = input("Rrodueix la teva nova contrasenya: ")
             crearUsuari(usuari, contrasenya)
         else:
             numero=0
-            print("SortINTEGER del programa...")   
+            print("Sort del programa...")   
