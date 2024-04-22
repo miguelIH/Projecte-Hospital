@@ -127,16 +127,23 @@ GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
 
 Data Masking
 ------------
-![Imatge1](Imatges/Datamasking.jpg)
+![Imatge1](Imatges/DataMasking.jpg)
 
+<br>
 
+![Imatge2](Imatges/DataMasking1.jpg)
 
+<br>
 
+![Imatge3](Imatges/DataMasking2.jpg)
 
+<br>
 
+![Imatge4](Imatges/DataMasking3.jpg)
 
+<br>
 
-
+![Imatge5](Imatges/DataMasking4.jpg)
 
 <br>
 
