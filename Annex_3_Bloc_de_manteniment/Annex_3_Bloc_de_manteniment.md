@@ -22,7 +22,7 @@ Donar permisos de creació de taules i roles
 ```
 ALTER ROLE admins CREATEDB CREATEROLE;
 ```
-
+<br>
 **ADMINISTRATIUS:** (PERSONAL VARI) (RAFA)
 -	Accés a les taules de RESERVA, PACIENT, VISITA, OPERACIO, QUIROFAN, HABITACIO, i PERSONAL.
 -	Pot realitzar operacions d'inserció, actualització i eliminació en aquestes taules per a gestionar reserves, pacients, visites, operacions quirúrgiques, quiròfans, habitacions i personal.
@@ -46,7 +46,7 @@ I ara posem els permisos
 GRANT SELECT ON reserva, pacient, visita, operacio, quirofan, habitacio, personal TO administratius;
 GRANT INSERT, UPDATE, DELETE ON reserva, pacient, visita, operacio, quirofan, habitacio, personal TO administratius;
 ```
-
+<br>
 **Personal_medic** (Anna Lopez):
 -	Accés a les taules de PACIENT, VISITA, OPERACIO, HABITACIO, PERSONAL_MEDIC VISITA_MEDICAMENT.
 -	Poden veure i actualitzar informació sobre pacients, visites mèdiques, operacions, assignació d'habitacions, assignació de personal mèdic i medicaments receptats.
@@ -69,63 +69,51 @@ Li donem permisos:
 ```
 GRANT SELECT, UPDATE ON PACIENT, VISITA, OPERACIO, HABITACIO, PERSONAL_MEDIC, VISITA_MEDICAMENT TO personal_medic;
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-INFERMERS (Cristiano_Ronaldo):
+<br>
+**INFERMERS** (Cristiano_Ronaldo):
 -	Accés a les taules de PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA.
 -	Poden veure i actualitzar informació sobre pacients, assignació d'habitacions, assignació de personal d'infermeri i detalls de les operacions quirúrgiques.
 -	No haurien de tenir permisos per a modificar informació administrativa general o detalls mèdics específics, com les taules de RESERVA o MEDICAMENT.
 Crear rol:
--	CREATE ROLE infermers:
-
-Crear el usuari i assignar el rol
--	CREATE USER cristiano_ronaldo WITH PASSWORD 'CR7';
+```
+CREATE ROLE infermers:
+```
+Crear el usuari i assignar el rol:
+```
+CREATE USER cristiano_ronaldo WITH PASSWORD 'CR7';
 GRANT infermers TO cristiano_ronaldo;
-Primer li triem tots els permisos per tenir mes seguretat (Llista negre) 
--	REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM infermers;
-Permisos
--	GRANT SELECT, UPDATE ON PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA TO infermers;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-MANTENIMENT (PERSONAL VARI):
+```
+Primer li triem tots els permisos per tenir mes seguretat: (Llista negre) 
+```
+REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM infermers;
+```
+Permisos:
+```
+GRANT SELECT, UPDATE ON PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA TO infermers;
+```
+<br>
+**MANTENIMENT** (PERSONAL VARI):
 -	Accés limitat a les taules necessàries per a realitzar les seves funcions específiques, com HABITACIO i PERSONAL_VARI.
 -	Poden veure i actualitzar informació sobre les habitacions assignades i les tasques assigna-dones a ells.
 -	No haurien de tenir accés a informació confidencial de pacients o detalls mèdics.
 
 Crear rol:
--	CREATE ROLE manteniment
+```
+CREATE ROLE manteniment
+```
 Crear el usuari i assignar el rol
--	CREATE USER monica_paredes WITH PASSWORD ‘monica1234’;
+```
+CREATE USER monica_paredes WITH PASSWORD ‘monica1234’;
 GRANT manteniment TO monica_paredes;
+```
 Primer li triem tots els permisos per tenir mes seguretat (Llista negre) 
--	REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM manteniment;
+```
+REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM manteniment;
+```
 Permisos
--	GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
-
+```
+GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
+```
 
 Data Masking
 ------------
