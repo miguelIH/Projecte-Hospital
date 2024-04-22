@@ -18,7 +18,7 @@ Donar accés complet a la base de dades:
 ```
 GRANT ALL PRIVILEGES ON DATABASE "hOSPIAL ESPERO QUE EL FINAL" TO admins;
 ```
-Donar permisos de creació de taules i roles
+Donar permisos de creació de taules i roles:
 ```
 ALTER ROLE admins CREATEDB CREATEROLE;
 ```
@@ -30,20 +30,20 @@ ALTER ROLE admins CREATEDB CREATEROLE;
 -	Pot realitzar operacions d'inserció, actualització i eliminació en aquestes taules per a gestionar reserves, pacients, visites, operacions quirúrgiques, quiròfans, habitacions i personal.
 -	No hauria de tenir permisos per a modificar taules relacionades amb detalls mèdics específics , com els medicaments o els registres mèdics dels pacients.
 
-Crear rols
+Crear rols:
 ```
 CREATE ROLE administratius;
 ```
-Crear el usuari de administratius
+Crear el usuari de administratius:
 ```
 CREATE USER rafa_pacheco WITH PASSWORD 'rafita1234';
 GRANT administratius TO rafa_pacheco;
 ```
-Primer li triem tots els permisos per tenir mes seguretat *(Llista negre)* 
+Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic, habitacio, medicament, operacio, pacient, personal, personal_infermeria, personal_medic, personal_vari, planta, quirofan, reserva, visita, visita_medicament FROM administratius;
 ```
-I ara posem els permisos
+I ara posem els permisos:
 ```
 GRANT SELECT ON reserva, pacient, visita, operacio, quirofan, habitacio, personal TO administratius;
 GRANT INSERT, UPDATE, DELETE ON reserva, pacient, visita, operacio, quirofan, habitacio, personal TO administratius;
@@ -65,7 +65,7 @@ Creem el usuari i assignem el rol:
 CREATE USER anna_lopez WITH PASSWORD 'anna1234';
 GRANT personal_medic TO anna_lopez;
 ```
-Primer li triem tots els permisos per tenir mes seguretat (Llista negre) 
+Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM personal_medic;
 ```
@@ -89,7 +89,7 @@ Crear el usuari i assignar el rol:
 CREATE USER cristiano_ronaldo WITH PASSWORD 'CR7';
 GRANT infermers TO cristiano_ronaldo;
 ```
-Primer li triem tots els permisos per tenir mes seguretat: (Llista negre) 
+Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM infermers;
 ```
@@ -109,19 +109,21 @@ Crear rol:
 ```
 CREATE ROLE manteniment
 ```
-Crear el usuari i assignar el rol
+Crear el usuari i assignar el rol:
 ```
 CREATE USER monica_paredes WITH PASSWORD ‘monica1234’;
 GRANT manteniment TO monica_paredes;
 ```
-Primer li triem tots els permisos per tenir mes seguretat (Llista negre) 
+Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM manteniment;
 ```
-Permisos
+Permisos:
 ```
 GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
 ```
+
+<br>
 
 Data Masking
 ------------
