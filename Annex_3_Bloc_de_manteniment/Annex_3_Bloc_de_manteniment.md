@@ -22,7 +22,9 @@ Donar permisos de creació de taules i roles
 ```
 ALTER ROLE admins CREATEDB CREATEROLE;
 ```
+
 <br>
+
 **ADMINISTRATIUS:** (PERSONAL VARI) (RAFA)
 -	Accés a les taules de RESERVA, PACIENT, VISITA, OPERACIO, QUIROFAN, HABITACIO, i PERSONAL.
 -	Pot realitzar operacions d'inserció, actualització i eliminació en aquestes taules per a gestionar reserves, pacients, visites, operacions quirúrgiques, quiròfans, habitacions i personal.
@@ -46,7 +48,9 @@ I ara posem els permisos
 GRANT SELECT ON reserva, pacient, visita, operacio, quirofan, habitacio, personal TO administratius;
 GRANT INSERT, UPDATE, DELETE ON reserva, pacient, visita, operacio, quirofan, habitacio, personal TO administratius;
 ```
+
 <br>
+
 **Personal_medic** (Anna Lopez):
 -	Accés a les taules de PACIENT, VISITA, OPERACIO, HABITACIO, PERSONAL_MEDIC VISITA_MEDICAMENT.
 -	Poden veure i actualitzar informació sobre pacients, visites mèdiques, operacions, assignació d'habitacions, assignació de personal mèdic i medicaments receptats.
@@ -69,7 +73,9 @@ Li donem permisos:
 ```
 GRANT SELECT, UPDATE ON PACIENT, VISITA, OPERACIO, HABITACIO, PERSONAL_MEDIC, VISITA_MEDICAMENT TO personal_medic;
 ```
+
 <br>
+
 **INFERMERS** (Cristiano_Ronaldo):
 -	Accés a les taules de PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA.
 -	Poden veure i actualitzar informació sobre pacients, assignació d'habitacions, assignació de personal d'infermeri i detalls de les operacions quirúrgiques.
@@ -91,7 +97,9 @@ Permisos:
 ```
 GRANT SELECT, UPDATE ON PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA TO infermers;
 ```
+
 <br>
+
 **MANTENIMENT** (PERSONAL VARI):
 -	Accés limitat a les taules necessàries per a realitzar les seves funcions específiques, com HABITACIO i PERSONAL_VARI.
 -	Poden veure i actualitzar informació sobre les habitacions assignades i les tasques assigna-dones a ells.
