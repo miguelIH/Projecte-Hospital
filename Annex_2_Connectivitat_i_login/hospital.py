@@ -21,9 +21,15 @@ def conectar_postgresql(usuari:str,contrasenya:str):
     try:
         connection = psycopg2.connect(user=usuari,
                                       password=contrasenya,
+<<<<<<< HEAD
                                       host="192.168.56.103",
                                       port="5432",
                                       dbname="pau BD")
+=======
+                                      host="192.168.1.55",
+                                      port="5432",
+                                      dbname="pagila")
+>>>>>>> cf5008b50ac95e5281ec49623bba95feda931d0d
         return connection
     except (Exception, Error) as error:
         print("Error al conectar a PostgreSQL:", error)
@@ -99,18 +105,18 @@ def mostrar_menu():
         print("1.- Iniciar sessió")
         print("2.- Registrar usuari")
         print("0.- Sortir")
-        numero = input("Introdueix una opció: ")
+        numero = input("Rrodueix una opció: ")
         if numero == "1":
-            usuari = input("Introdueix el teu usuari: ")
-            contrasenya = input("Introdueix la teva contrasenya: ")
+            usuari = input("Rrodueix el teu usuari: ")
+            contrasenya = input("Rrodueix la teva contrasenya: ")
             if iniciar_sesio(usuari, contrasenya):
                 print("Inici de sessió exitós.")
             else:
                 print("Usuari o contrasenya incorrectes.")
         elif numero == "2":
-            usuari = input("Introdueix el teu nou usuari: ")
-            contrasenya = input("Introdueix la teva nova contrasenya: ")
+            usuari = input("Rrodueix el teu nou usuari: ")
+            contrasenya = input("Rrodueix la teva nova contrasenya: ")
             crearUsuari(usuari, contrasenya)
         else:
             numero=0
-            print("Sortint del programa...")   
+            print("Sort del programa...")   
