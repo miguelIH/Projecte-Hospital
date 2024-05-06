@@ -21,9 +21,9 @@ def conectar_postgresql(usuari:str,contrasenya:str):
     try:
         connection = psycopg2.connect(user=usuari,
                                       password=contrasenya,
-                                      host="192.168.56.108",
+                                      host="192.168.56.103",
                                       port="5432",
-                                      dbname="postgres")
+                                      dbname="pau BD")
         return connection
     except (Exception, Error) as error:
         print("Error al conectar a PostgreSQL:", error)
@@ -58,7 +58,7 @@ def crearUsuari(usuari:str,contrasenya:str):
             writer.writerows(fitxer)
             
         
-        connexio = conectar_postgresql("postgres","12345")
+        connexio = conectar_postgresql("postgres","pau21")
         if connexio is not None:
             cursor = connexio.cursor()
             cursor.execute(f"CREATE ROLE {usuari} LOGIN PASSWORD '{contrasenya}'")
